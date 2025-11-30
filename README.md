@@ -1,6 +1,6 @@
 # CafeMania
 Projeto físico pertencente a S.A didática para o curso de Técnico em Desenvolvimento de Sistemas - Senai Itajai. CaféMania é um nome 
-fictício de um sistema de gestão limitado voltado para gestão de cafeterias. O sistema em si é uma versão alfa para exibição do 
+fictício de um sistema de gestão limitado voltado para cafeterias. O sistema em si é uma versão alfa para exibição do 
 resultado para questões de nota para o desenpenho do grupo que esta desenvolvendo.
 
 Abaixo há instruções inicial de instalção e execução da aplicação como parte dos requisitos avaliativos.
