@@ -1,0 +1,9 @@
+# Abrir o Prompt de Comando (CMD) ou PowerShell
+mkdir CafeteriaPDV
+cd CafeteriaPDV
+
+# Criar ambiente virtual
+python -m venv venv
+
+# Ativar ambiente virtual
+venv\Scripts\activate
