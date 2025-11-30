@@ -7,3 +7,5 @@ python -m venv venv
 
 # Ativar ambiente virtual
 venv\Scripts\activate
+
+pip install mysql-connector-python tkcalendar pyinstaller
