@@ -1,47 +1,57 @@
-# CafeMania
-Projeto físico pertencente a S.A didática para o curso de Técnico em Desenvolvimento de Sistemas - Senai Itajai. CaféMania é um nome 
-fictício de um sistema de gestão limitado voltado para cafeterias. O sistema em si é uma versão alfa para exibição do 
-resultado para questões de nota para o desenpenho do grupo que esta desenvolvendo.
+☕ Coffeemanager - Sistema de Cafeteria CLI
 
-Abaixo há instruções inicial de instalção e execução da aplicação como parte dos requisitos avaliativos.
+Sistema de gerenciamento completo para cafeterias desenvolvido em linha de comando (CLI) com Node.js e MySQL. Projeto acadêmico focado em operações essenciais de uma cafeteria: vendas, controle de estoque, gestão de clientes e relatórios financeiros.
 
-SISTEMA DE GESTÃO PARA CAFETERIA
-================================
+⚙️ Requisitos de Sistema
 
-REQUISITOS MÍNIMOS:
-- Windows 10 ou superior
-- 4 GB de RAM
-- 500 MB de espaço em disco
-- MySQL Server 8.0 (instalador incluso na pasta mysql_installer)
+Node.js v14+
+XAMPP 8.0+ (para servidor Apache e MySQL integrados)
+MySQL Workbench 8.0+ (para gerenciamento visual do banco de dados)
+Sistema Operacional: Windows, Linux ou macOS (testado em Windows 10/11)
 
-INSTALAÇÃO:
-1. Execute o instalador do MySQL na pasta mysql_installer/
-   - Siga as instruções padrão
-   - Defina uma senha para o usuário 'root' (anote esta senha!)
-   - Durante a instalação, selecione "Server only" e depois "Next" até concluir
+📥 Instalação
 
-2. Execute o arquivo CafeteriaPDV.exe
-   - Na primeira execução, o sistema criará automaticamente o banco de dados
-   - Configure as credenciais:
-     Host: localhost
-     Usuário: root
-     Senha: [a senha que você definiu no MySQL]
-     Banco de dados: cafeteria_db (será criado automaticamente)
+1 Pré-requisitos (Configuração do Banco de Dados)
+ 1. Configure o XAMPP:
+ 2. Inicie o painel de controle do XAMPP
+ 3. Inicie os módulos MySQL
+"Verifique se o MySQL está rodando na porta 3306"
 
-3. Faça login com as credenciais padrão:
-   Usuário: admin
-   Senha: admin123
+Clone o repositório:
 
-PRIMEIROS PASSOS:
-- Cadastre seus produtos na tela de produção
-- Registre clientes para o sistema de fidelidade
-- Comece a usar o PDV para registrar vendas
+git clone https://github.com/seuusuario/cafeteria-cli.git
+cd cafeteria-cli
 
-SUPORTE:
-Email: suporte@cafeteriasistema.com.br
-Telefone: (11) 99999-9999
-Horário: Segunda a Sexta, 9h às 18h
+Instale as dependências:
 
-V1.0 Alfa- Dezembro de 2025
+npm install readline-sync mysql2
 
-Nota a considerar: esse sistema não está operacional para meios legais ou comerciais em nenhum aspecto e a ultilização sem autorização ou concentimento dos idealizadores infligem na licensa que protege esse mesmo.
+🗂️ Estrutura do Projeto
+
+cafeteria-cli/
+├── app.js                  # Arquivo principal - ponto de entrada
+├── db.js                   # Conexão com o banco de dados MySQL
+├── estrutura.sql           # Script SQL para criar a estrutura do banco
+├── package.json            # Dependências e scripts do projeto
+├── utils/
+│   └── caixa.js            # Utilitários para gestão de caixa
+└── comandos/
+    ├── auth.js             # Sistema de autenticação
+    ├── venda.js            # Gestão de vendas
+
+▶️ Como Usar
+1 - Inicie o XAMPP:
+ Abra o painel de controle do XAMPP
+ Certifique-se de que os serviços Apache e MySQL estão em execução
+2 - Inicie o sistema
+ "node app.js" no terminal do prompt de comando do Windows
+3 - Crie um login com suas preferências.
+4 - Caso de certo essa é a interface:
+   --- 📊 RELATÓRIOS E CAIXA ---
+   1. 💰 Abrir Caixa
+   2. 📉 Fechar Caixa e Gerar Relatório
+   3. 📈 Vendas do Dia
+   4. ⚠️ Alertas (Estoque e Validade)
+   0. 🔙 Voltar
+
+Dentro desse reposotório esta a documentação completo do código.
