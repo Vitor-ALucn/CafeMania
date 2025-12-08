@@ -1,0 +1,15 @@
+{
+    "name": "cafeteria-cli",
+    "version": "1.0.0",
+    "description": "Sistema de Cafeteria via linha de comando",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.3",
+        "dotenv": "^16.4.5",
+        "mysql2": "^3.15.3",
+        "readline-sync": "^1.4.10"
+    }
+}
